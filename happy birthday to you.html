@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8" http-equiv="Content-Type">
+
+
+  <title>生日快乐</title>
+     <style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+p {
+	margin: 0 0;
+	position: absolute;
+	font: 16px Verdana;
+	color: #eee;
+	height: 25px;
+	top: calc( 100vh - 30px );
+	text-shadow: 0 0 2px white;
+}
+p a {
+	text-decoration: none;
+	color: #aaa;
+}
+span {
+	font-size: 11px;
+}
+p > a:first-of-type {
+	font-size: 20px;
+}
+body {
+	overflow: hidden;
+}
+    </style>
+
+ 
+
+</head>
+
+<body>
+   
+  <canvas id=c></canvas>
+  
+   <audio id = "music">
+        <source src="Happy Birthday to You.mp3" type="audio/mpeg">
+  </audio>
+   
+
+  <script language="JavaScript">
+     myVid = document.getElementById("music");
+     myVid.controls = false;
+     myVid.autoplay = true;
+     myVid.load();
+   
+</script> 
+
+  <script src="index.js">
+  </script>
+
+
+
+</body>
+</html>
